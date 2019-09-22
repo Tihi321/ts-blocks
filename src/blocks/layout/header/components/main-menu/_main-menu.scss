@@ -1,0 +1,35 @@
+// stylelint-disable max-nesting-depth
+
+$main-navigation: (
+  size: 16px,
+  line-height: 1.5,
+  link: (
+    color: $base-mine-color,
+  ),
+);
+
+.main-navigation {
+  @include media(desktop up) {
+    $this: &;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    height: 100%;
+
+    &__link {
+      padding: 15px 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: map-get-strict($main-navigation, 'size');
+      line-height: map-get-strict($main-navigation, 'line-height');
+      color: map-get-deep($main-navigation, 'link', 'color');
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

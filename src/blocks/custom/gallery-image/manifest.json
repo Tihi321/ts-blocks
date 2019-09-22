@@ -1,0 +1,26 @@
+{
+  "blockName": "gallery-image",
+  "title": "Gallery Image",
+  "description" : "Gallery image block.",
+  "category": "common",
+  "icon": {
+    "src": "format-image"
+  },
+  "keywords": [
+    "gallery",
+    "image"
+  ],
+  "attributes": {
+    "image": {
+      "type": "object",
+      "default": {
+        "id": 0,
+        "url": "",
+        "title": ""
+      },
+      "mediaAction": true
+    }
+  },
+  "parent": [ "a1-careers-page/gallery" ],
+  "hasWrapper": false
+}

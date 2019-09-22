@@ -1,0 +1,27 @@
+{
+  "blockName": "vimeo",
+  "title": "Vimeo",
+  "description" : "Vimeo video block with custom settings.",
+  "category": "common",
+  "icon": {
+    "src": "video-alt2"
+  },
+  "keywords": [
+    "Video",
+    "Vimeo",
+    "Block Vimeo"
+  ],
+  "attributes": {
+    "vimeoId": {
+      "type": "string",
+      "default": ""
+    },
+    "vimeoOptions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+        },
+      "default": []
+    }
+  }
+}

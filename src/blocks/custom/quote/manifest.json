@@ -1,0 +1,27 @@
+{
+  "blockName": "quote",
+  "title": "Quote",
+  "description" : "Quote block",
+  "category": "common",
+  "icon": {
+    "src": "format-image"
+  },
+  "keywords": [
+    "quote",
+    "text"
+  ],
+  "attributes": {
+    "styleSpacingTop": {
+      "type": "string",
+      "default": "default"
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "color": {
+      "type": "string",
+      "default": "default"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import './components/navigation/navigation.scss';
+
+$footer: (
+  color: $base-dove-color,
+  default: (
+    mobile: (
+      font-size: 12px,
+      line-height: 1.86,
+    ),
+    tablet: (
+      font-size: 14px,
+    ),
+  ),
+);
+
+.footer {
+  &__container {
+    @include responsive($footer, default);
+
+    @extend %site-padding;
+    max-width: $base-container-size;
+    margin: 0 auto;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include media(tablet up) {
+      flex-direction: row;
+    }
+  }
+
+  &__copyright {
+    color: map-get-strict($footer, 'color');
+    text-align: center;
+  }
+
+  &__menu-link {
+    color: map-get-strict($footer, 'color');
+    text-decoration: none;
+    line-height: 1.3;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+
+    @include media(tablet up) {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+}

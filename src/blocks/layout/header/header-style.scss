@@ -1,0 +1,85 @@
+@import './components/main-menu/main-menu';
+@import './components/mobile-menu/mobile-menu';
+
+$header: (
+  shadow: rgba(0, 0, 0, 0.16),
+  logo: (
+    height: 55px,
+  ),
+  search: (
+    bg: $base-crimson-color,
+    color: $base-white-color,
+  ),
+  default: (
+    mobile: (
+      font-size: 18px,
+      line-height: 1.5,
+    ),
+  ),
+);
+
+.header {
+  box-shadow: 0 3px 6px 0 map-get-deep($header, 'shadow');
+
+  &__container {
+    @extend %site-padding;
+    max-width: $base-container-size;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img {
+    height: map-get-deep($header, 'logo', 'height');
+  }
+
+  &__search {
+    &-outer {
+      @include media(tablet down) {
+        display: none;
+      }
+    }
+
+    &-field {
+      background-color: map-get-deep($header, 'search', 'bg');
+      color: map-get-deep($header, 'search', 'color');
+      display: flex;
+      align-items: center;
+      padding: 5px 15px;
+    }
+
+    &-icon {
+      margin-left: 10px;
+    }
+
+    &-input {
+      background-color: map-get-deep($header, 'search', 'bg');
+      color: map-get-deep($header, 'search', 'color');
+      border: none;
+      padding: 5px;
+      max-width: 110px;
+
+      &::placeholder {
+        color: map-get-deep($header, 'search', 'color');
+      }
+
+      &:focus {
+        box-shadow: 0 1px 0 0 map-get-deep($header, 'search', 'color');
+        outline: none;
+      }
+    }
+
+  }
+}
+
+.header.is-scrolling-up {
+  &__logo-img {
+    height: auto;
+  }
+}

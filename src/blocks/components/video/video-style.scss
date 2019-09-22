@@ -1,0 +1,67 @@
+$video-element: (
+  icon-color: $base-crimson-color,
+  icon-hover: lighten($base-crimson-color, 10%),
+  icon-border: $base-white-color,
+);
+
+.video-element {
+  $this: &;
+  width: 100%;
+  display: block;
+  position: relative;
+
+  &__video,
+  &__element {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__play-icon {
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: map-get-strict($video-element, 'icon-color');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid map-get-strict($video-element, 'icon-border');
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0 15px 25px;
+      margin-left: 5px;
+      border-color: transparent transparent transparent map-get-strict($video-element, 'icon-border');
+    }
+  }
+
+  &__poster {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: map-get-strict($zindex, poster);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+    &:hover {
+      #{$this}__play-icon {
+        background-color: map-get-strict($video-element, 'icon-hover');
+      }
+    }
+
+    &.is-hidden {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.jumbotron {
+  $this: &;
+
+  #{$this}__paragraph {
+    padding: 15px 0;
+    line-height: 1.5;
+  }
+
+}

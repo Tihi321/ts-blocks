@@ -1,0 +1,36 @@
+// This file is here for initial setup due to regex loader.
+// If you have any other block with *-editor.scss file feal free to remove this file.
+.block-gallery {
+  display: block;
+
+  .block-editor-block-list__layout {
+    display: flex;
+    flex-wrap: wrap;
+
+    .wp-block {
+      width: 30%;
+      min-width: 150px;
+    }
+
+    .block-editor-block-list__block-edit {
+      height: 100%;
+
+      & > div {
+        height: 100%;
+      }
+    }
+
+    @include media(mobile) {
+      .wp-block {
+        padding: 10px 0;
+        height: 150px;
+      }
+    }
+    @include media(tablet up) {
+      .wp-block {
+        padding: 10px;
+        height: 300px;
+      }
+    }
+  }
+}

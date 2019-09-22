@@ -1,0 +1,103 @@
+$gallery-vars: (
+  icon-color: $base-white-color,
+  navigation-bg: $base-black-color,
+  icon-bg: rgba($base-black-color, 0.5),
+  navigation-index: 10,
+  navigation-size: 25px,
+);
+
+.block-gallery {
+  $this: &;
+  display: grid;
+  min-height: 600px;
+
+  @include media(mobile) {
+    grid-template-columns: 1fr;
+
+    &__item {
+      padding: 10px 0;
+      height: 150px;
+    }
+  }
+  @include media(tablet) {
+    grid-template-columns: 1fr 1fr;
+
+    &__item {
+      padding: 10px;
+      height: 300px;
+    }
+  }
+  @include media(desktop up) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    &__item {
+      padding: 10px;
+      height: auto;
+
+      &:first-child {
+        grid-column: 1 / span 2;
+      }
+
+      &:last-child {
+        grid-column: 3 / span 2;
+      }
+    }
+  }
+
+  &__modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: map-get-strict($zindex, modal);
+    background-color: map-get-strict($gallery-vars, navigation-bg);
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+
+    &.is-visible {
+      transform: translateX(0);
+    }
+
+    .block-gallery-image__rollover {
+      display: none;
+    }
+  }
+
+  &-slider {
+    width: 80%;
+    height: 80%;
+
+    #{$this}-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__navigation {
+      position: absolute;
+      top: 50%;
+      z-index: map-get-strict($gallery-vars, navigation-index);
+      cursor: pointer;
+      color: map-get-strict($gallery-vars, icon-color);
+      background-color: map-get-strict($gallery-vars, icon-bg);
+      padding: 20px;
+      border-radius: 50%;
+      font-size: map-get-strict($gallery-vars, navigation-size);
+
+      &--next {
+        left: 100px;
+        right: auto;
+        transform: rotate(-90deg);
+      }
+
+      &--prev {
+        left: auto;
+        right: 100px;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

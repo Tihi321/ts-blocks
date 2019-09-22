@@ -1,0 +1,30 @@
+{
+  "name": "infinum/a1-careers-page-internal",
+  "description": "This repository contains all the tools you need to start building a modern WordPress theme, using all the latest front end development tools.",
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
+    "infinum/coding-standards-wp": "0.4.1"
+  },
+  "require": {
+    "php": ">=7.0",
+    "infinum/eightshift-blocks": "^1.0.9",
+    "infinum/eightshift-libs": "^0.9.0",
+    "paquettg/php-html-parser": "^2.1"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "process-timeout": 2000
+  },
+  "scripts": {
+    "check-cs": "@php ./vendor/bin/phpcs",
+    "fix-cs": "@php ./vendor/bin/phpcbf"
+  }
+}

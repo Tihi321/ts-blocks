@@ -1,0 +1,99 @@
+$header-mobile-menu: (
+  bg: $base-white-color,
+  color: $base-mine-color,
+  active-border-color: $base-white-color,
+);
+
+// stylelint-disable max-nesting-depth, selector-max-specificity
+
+.header {
+  &__mobile-menu-icon,
+  &__mobile-menu-remove-icon {
+    display: none;
+  }
+
+  @include media(tablet down) {
+    &__mobile-menu-icon,
+    &__mobile-menu-remove-icon {
+      display: block;
+      cursor: pointer;
+    }
+
+    &__mobile-menu-icon {
+      border: none;
+      box-shadow: none;
+    }
+
+    &__menu {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: map-get-strict($header-mobile-menu, 'bg');
+      padding: 110px $base-gutter-size $base-gutter-size;
+      left: 0;
+      top: 0;
+      transform: translateZ(0) translateY(-100%);
+      z-index: map-get-strict($zindex, 'header-menu');
+
+      transition: {
+        property: transform;
+        timing-function: ease-in;
+        duration: 0.3s;
+      }
+    }
+
+    .main-navigation {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      &__item {
+        &--active,
+        &:hover {
+          .main-navigation__link-text::after {
+            width: 100%;
+            background-color: map-get-strict($header-mobile-menu, 'active-border-color');
+          }
+        }
+
+        &--active {
+          font-weight: bold;
+        }
+      }
+
+      &__link {
+        text-decoration: none;
+        font-size: 33px;
+        line-height: 1;
+        padding: 23px 0;
+        display: block;
+        color: map-get-strict($header-mobile-menu, 'color');
+      }
+
+      &__link-text {
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 5px;
+          background-color: transparent;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          transition: {
+            property: background-color, width;
+            timing-function: ease-in;
+            duration: 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-mobile-menu-active {
+  .header__menu {
+    transform: translateZ(0) translateY(0);
+  }
+}

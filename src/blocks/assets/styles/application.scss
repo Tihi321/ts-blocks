@@ -1,0 +1,22 @@
+// This is a main entrypoint for project style for theme area only that are not related to blocks.
+
+// Vendors - node modules
+@import 'normalize-scss';
+@include normalize(); // stylelint-disable-line at-rule-empty-line-before
+
+@import '~swiper/dist/css/swiper.css';
+
+// Utils Shared across project.
+@import 'parts/shared';
+
+// Core resets.
+@import 'parts/core';
+
+//Icons
+@import 'icons/icons';
+
+// Find all layout components and require component_name-style.scss inside it.
+@import './../../layout/*/*-style.scss';
+
+// Style for Login screen.
+@import 'admin/login';

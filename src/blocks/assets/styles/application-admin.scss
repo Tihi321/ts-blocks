@@ -1,0 +1,13 @@
+// This is a main entrypoint for project style for admin area only.
+
+// Utils Shared across project.
+@import 'parts/shared';
+
+// Admin specific.
+@import 'admin/login';
+
+// Theme options specific.
+@import 'admin/theme-options';
+
+//Icons
+@import 'icons/icons';

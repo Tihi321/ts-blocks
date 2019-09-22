@@ -1,0 +1,94 @@
+$card: (
+  colors: (
+    title: $base-black-color,
+    excerpt: $base-dove-color,
+    border: $base-crimson-color,
+    btn: $base-crimson-color,
+    btn-hover: lighten($base-crimson-color, 10%),
+  ),
+  font-family: $secondary-font-family,
+  title: (
+    mobile: (
+      font-size: 18px,
+      line-height: 2,
+    ),
+    tablet: (
+      font-size: 24px,
+      line-height: 1.5,
+    )
+  )
+);
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+
+  &__content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  &__image {
+    min-height: 190px;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 3px 0 0 map-get-deep($card, 'colors', 'border');
+  }
+
+  &__title {
+    @include responsive($card, 'title');
+    color: map-get-deep($card, 'colors', 'title');
+    font-family: map-get-strict($card, font-family);
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  &__excerpt {
+    font-size: 14px;
+    line-height: 1.5;
+    color: map-get-deep($card, 'colors', 'excerpt');
+  }
+
+  &__read-more {
+    display: inline-flex;
+    align-items: baseline;
+    padding: 0 24px 0 0;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: map-get-deep($card, 'colors', 'btn');
+    transition: color 0.3s ease;
+    text-decoration: none;
+    background: none;
+    border: none;
+
+    &::before {
+      font-size: 14px;
+      order: 1;
+      margin-left: 5px;
+      transform: rotateZ(90deg);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &:hover {
+    .card__image {
+      box-shadow: 0 1px 0 0 map-get-deep($card, 'colors', 'border');
+    }
+
+    .card__read-more {
+      color: map-get-deep($card, 'colors', 'btn-hover');
+    }
+
+    .card__read-more:before { /* stylelint-disable-line */
+      transform: rotateZ(90deg) translateY(-5px);
+    }
+  }
+}

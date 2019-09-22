@@ -1,0 +1,59 @@
+$gallery-image-vars: (
+  rollover-bg: rgba($base-white-color, 0.8),
+  rollover-z-index: 1,
+  note-bg: $base-white-color,
+  color: $base-crimson-color,
+);
+
+.block-gallery-image {
+  height: 100%;
+  position: relative;
+
+  &__rollover {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    background-color: map-get-strict($gallery-image-vars, rollover-bg);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__note {
+    color: map-get-strict($gallery-image-vars, color);
+    background-color: map-get-strict($gallery-image-vars, note-bg);
+    border: 1px solid map-get-strict($gallery-image-vars, color);
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      @extend %font-icon;
+
+      &::after {
+        content: unicode($icon--search);
+        color: map-get-strict($gallery-image-vars, color);
+        margin-left: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

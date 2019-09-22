@@ -1,0 +1,26 @@
+{
+  "blockName": "gallery",
+  "title": "Gallery Carousel",
+  "description" : "Gallery of Image blocks.",
+  "category": "common",
+  "icon": {
+    "src": "screenoptions"
+  },
+  "keywords": [
+    "gallery",
+    "image",
+    "video"
+  ],
+  "attributes": {
+    "allowedBlocks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "a1-careers-page/gallery-image"
+      ]
+    }
+  },
+  "hasInnerBlocks": true
+}

@@ -1,0 +1,95 @@
+.icon--search {
+  &::before {
+    content: unicode($icon--search);
+  }
+}
+
+.icon--pointer {
+  &::before {
+    content: unicode($icon--pointer);
+  }
+}
+
+.icon--magnifier {
+  &::before {
+    content: unicode($icon--magnifier);
+  }
+}
+
+.icon--briefcase {
+  &::before {
+    content: unicode($icon--briefcase);
+  }
+}
+
+.icon--download_icon {
+  &::before {
+    content: unicode($icon--download_icon);
+  }
+}
+
+.icon--edit_icon {
+  &::before {
+    content: unicode($icon--edit_icon);
+  }
+}
+
+.icon--email-unread {
+  &::before {
+    content: unicode($icon--email-unread);
+  }
+}
+
+.icon--download {
+  &::before {
+    content: unicode($icon--download);
+  }
+}
+
+.icon--baseline-add {
+  &::before {
+    content: unicode($icon--baseline-add);
+  }
+}
+
+.icon--padlock {
+  &::before {
+    content: unicode($icon--padlock);
+  }
+}
+
+.icon--hamburger-menu {
+  &::before {
+    content: unicode($icon--hamburger-menu);
+  }
+}
+
+.icon--remove {
+  &::before {
+    content: unicode($icon--remove);
+  }
+}
+
+.icon--check {
+  &::before {
+    content: unicode($icon--check);
+  }
+}
+
+.icon--arrow-fat {
+  &::before {
+    content: unicode($icon--arrow-fat);
+  }
+}
+
+.icon--arrow {
+  &::before {
+    content: unicode($icon--arrow);
+  }
+}
+
+.icon--brand {
+  &::before {
+    content: unicode($icon--brand);
+  }
+}

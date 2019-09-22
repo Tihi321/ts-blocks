@@ -1,0 +1,54 @@
+$footer-navigation: (
+  link: $base-dove-color,
+  before: $base-crimson-color
+);
+
+.footer-navigation {
+  @extend %list-reset;
+  $this: &;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+
+  @include media(tablet up) {
+    padding: 0 0 0 8px;
+    margin: 0;
+    width: auto;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 0 8px;
+    text-decoration: none;
+    color: map-get-strict($footer-navigation, 'link');
+    font-weight: normal;
+
+    &::before {
+      left: 0;
+      top: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: map-get-strict($footer-navigation, 'before');
+    }
+  }
+
+  @include media(mobile down) {
+    &__item:last-child {
+      #{$this}__link::after {
+        right: 0;
+        top: 0;
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: map-get-strict($footer-navigation, 'before');
+      }
+    }
+  }
+}
