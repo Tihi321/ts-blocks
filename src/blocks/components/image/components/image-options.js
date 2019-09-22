@@ -24,14 +24,14 @@ export const ImageOptions = (props) => {
           className="media-element--remove"
           onClick={onClick}
         >
-          {__('X', 'a1-careers-page')}
+          {__('X', 'ts-blocks')}
         </button>}
         <Image
           iconClass="edit-button__options"
           showToolbar={true}
           toolbarOnTop={false}
           className="media-element--reset media-element--icon"
-          placeholderTitle={__('field Item icon', 'a1-careers-page')}
+          placeholderTitle={__('field Item icon', 'ts-blocks')}
           mediaTitle={mediaTitle}
           mediaId={mediaId}
           mediaUrl={mediaUrl}

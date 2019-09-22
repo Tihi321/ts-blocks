@@ -9,7 +9,7 @@ import {
 
 export const Image = (props) => {
   const {
-    placeholderTitle = __('Image area', 'a1-careers-page'),
+    placeholderTitle = __('Image area', 'ts-blocks'),
     showToolbar = true,
     toolbarOnTop = true,
     mediaAlt,
@@ -31,7 +31,7 @@ export const Image = (props) => {
       render={({ open }) => (
         <IconButton
           className={iconClass}
-          label={__('Edit Image', 'a1-careers-page')}
+          label={__('Edit Image', 'ts-blocks')}
           icon="edit"
           onClick={open}
         />

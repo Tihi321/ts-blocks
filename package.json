@@ -1,7 +1,7 @@
 {
-  "name": "a1-careers-page",
+  "name": "ts-locks",
   "version": "1.0.0",
-  "author": "Team Eightshift",
+  "author": "Tihomir Selak",
   "main": "",
   "scripts": {
     "__eslintTheme": "eslint src/blocks/**/*.js",

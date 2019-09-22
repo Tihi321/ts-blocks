@@ -51,8 +51,8 @@ class Menu implements Service {
    */
   private function get_menu_positions() : array {
     return [
-      'header_main_nav' => esc_html__( 'Main Menu', 'a1-careers-page' ),
-      'footer_main_nav' => esc_html__( 'Footer Menu', 'a1-careers-page' ),
+      'header_main_nav' => esc_html__( 'Main Menu', 'ts-blocks' ),
+      'footer_main_nav' => esc_html__( 'Footer Menu', 'ts-blocks' ),
     ];
   }
 

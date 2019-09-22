@@ -17,6 +17,3 @@
 
 // Find all layout components and require component_name-style.scss inside it.
 @import './../../layout/*/*-style.scss';
-
-// Style for Login screen.
-@import 'admin/login';

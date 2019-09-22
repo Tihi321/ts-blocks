@@ -1,5 +1,5 @@
 {
-  "name": "infinum/a1-careers-page-internal",
+  "name": "infinum/ts-blocks-internal",
   "description": "This repository contains all the tools you need to start building a modern WordPress theme, using all the latest front end development tools.",
   "require-dev": {
     "dealerdirect/phpcodesniffer-composer-installer": "^0.5",

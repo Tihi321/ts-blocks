@@ -39,7 +39,7 @@
     [
       "@wordpress/babel-plugin-makepot",
       {
-        "output": "wp-content/themes/a1-careers-page/languages/a1-careers-page_js.pot"
+        "output": "languages/ts-blocks-js.pot"
       }
     ],
 		[ "@wordpress/babel-plugin-import-jsx-pragma", {

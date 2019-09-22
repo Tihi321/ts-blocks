@@ -43,43 +43,43 @@ export const WrapperOptions = (props) => {
   }
 
   const spacingOptions = [
-    { label: __('Not Set', 'a1-careers-page'), value: '' },
-    { label: __('Biggest (100px)', 'a1-careers-page'), value: 'biggest' },
-    { label: __('Bigger (90px)', 'a1-careers-page'), value: 'bigger' },
-    { label: __('Big (80px)', 'a1-careers-page'), value: 'big' },
-    { label: __('Largest (70px)', 'a1-careers-page'), value: 'largest' },
-    { label: __('Larger (60px)', 'a1-careers-page'), value: 'larger' },
-    { label: __('Large (50px)', 'a1-careers-page'), value: 'large' },
-    { label: __('Default (40px)', 'a1-careers-page'), value: 'default' },
-    { label: __('Medium (30px)', 'a1-careers-page'), value: 'medium' },
-    { label: __('Small (20px)', 'a1-careers-page'), value: 'small' },
-    { label: __('Tiny (10px)', 'a1-careers-page'), value: 'tiny' },
-    { label: __('No padding (0px)', 'a1-careers-page'), value: 'no-spacing' },
+    { label: __('Not Set', 'ts-blocks'), value: '' },
+    { label: __('Biggest (100px)', 'ts-blocks'), value: 'biggest' },
+    { label: __('Bigger (90px)', 'ts-blocks'), value: 'bigger' },
+    { label: __('Big (80px)', 'ts-blocks'), value: 'big' },
+    { label: __('Largest (70px)', 'ts-blocks'), value: 'largest' },
+    { label: __('Larger (60px)', 'ts-blocks'), value: 'larger' },
+    { label: __('Large (50px)', 'ts-blocks'), value: 'large' },
+    { label: __('Default (40px)', 'ts-blocks'), value: 'default' },
+    { label: __('Medium (30px)', 'ts-blocks'), value: 'medium' },
+    { label: __('Small (20px)', 'ts-blocks'), value: 'small' },
+    { label: __('Tiny (10px)', 'ts-blocks'), value: 'tiny' },
+    { label: __('No padding (0px)', 'ts-blocks'), value: 'no-spacing' },
   ];
 
   return (
-    <PanelBody title={__('Utility', 'a1-careers-page')}>
-      <h3>{__('Colors', 'a1-careers-page')}</h3>
+    <PanelBody title={__('Utility', 'ts-blocks')}>
+      <h3>{__('Colors', 'ts-blocks')}</h3>
 
       {styleBackgroundColor &&
         <SelectControl
-          label={__('Background Color', 'a1-careers-page')}
+          label={__('Background Color', 'ts-blocks')}
           value={styleBackgroundColor}
           options={[
-            { label: __('Default', 'a1-careers-page'), value: 'default' },
-            { label: __('Light', 'a1-careers-page'), value: 'light' },
-            { label: __('Black', 'a1-careers-page'), value: 'black' },
+            { label: __('Default', 'ts-blocks'), value: 'default' },
+            { label: __('Light', 'ts-blocks'), value: 'light' },
+            { label: __('Black', 'ts-blocks'), value: 'black' },
           ]}
           onChange={onChangeStyleBackgroundColor}
         />
       }
 
       <hr />
-      <h3>{__('Content', 'a1-careers-page')}</h3>
+      <h3>{__('Content', 'ts-blocks')}</h3>
 
       {styleContentWidth &&
         <SelectControl
-          label={__('Content Width', 'a1-careers-page')}
+          label={__('Content Width', 'ts-blocks')}
           value={styleContentWidth}
           options={colsOutput}
           onChange={onChangeStyleContentWidth}
@@ -88,26 +88,26 @@ export const WrapperOptions = (props) => {
 
       {styleContentOffset &&
         <SelectControl
-          label={__('Content Offset', 'a1-careers-page')}
+          label={__('Content Offset', 'ts-blocks')}
           value={styleContentOffset}
           options={[
-            { label: __('No offset', 'a1-careers-page'), value: 'none' },
-            { label: __('Center', 'a1-careers-page'), value: 'center' },
+            { label: __('No offset', 'ts-blocks'), value: 'none' },
+            { label: __('Center', 'ts-blocks'), value: 'center' },
           ]}
           onChange={onChangeStyleContentOffset}
         />
       }
 
       <hr />
-      <h3>{__('Container', 'a1-careers-page')}</h3>
+      <h3>{__('Container', 'ts-blocks')}</h3>
       {styleContainerWidth &&
         <SelectControl
-          label={__('Container Width', 'a1-careers-page')}
+          label={__('Container Width', 'ts-blocks')}
           value={styleContainerWidth}
           options={[
-            { label: __('Default', 'a1-careers-page'), value: 'default' },
-            { label: __('Medium', 'a1-careers-page'), value: 'medium' },
-            { label: __('No Width', 'a1-careers-page'), value: 'no-width' },
+            { label: __('Default', 'ts-blocks'), value: 'default' },
+            { label: __('Medium', 'ts-blocks'), value: 'medium' },
+            { label: __('No Width', 'ts-blocks'), value: 'no-width' },
           ]}
           onChange={onChangeStyleContainerWidth}
         />
@@ -115,22 +115,22 @@ export const WrapperOptions = (props) => {
 
       {styleContainerSpacing &&
         <SelectControl
-          label={__('Container Spacing', 'a1-careers-page')}
+          label={__('Container Spacing', 'ts-blocks')}
           value={styleContainerSpacing}
           options={[
-            { label: __('Default', 'a1-careers-page'), value: 'default' },
-            { label: __('No Spacing', 'a1-careers-page'), value: 'no-spacing' },
+            { label: __('Default', 'ts-blocks'), value: 'default' },
+            { label: __('No Spacing', 'ts-blocks'), value: 'no-spacing' },
           ]}
           onChange={onChangeStyleContainerSpacing}
         />
       }
 
       <hr />
-      <h3>{__('Spacing TOP', 'a1-careers-page')}</h3>
+      <h3>{__('Spacing TOP', 'ts-blocks')}</h3>
 
       {styleSpacingTop &&
         <SelectControl
-          label={__('Desktop', 'a1-careers-page')}
+          label={__('Desktop', 'ts-blocks')}
           value={styleSpacingTop}
           options={spacingOptions}
           onChange={onChangeStyleSpacingTop}
@@ -139,7 +139,7 @@ export const WrapperOptions = (props) => {
 
       {styleSpacingTopTablet &&
         <SelectControl
-          label={__('Tablet', 'a1-careers-page')}
+          label={__('Tablet', 'ts-blocks')}
           value={styleSpacingTopTablet}
           options={spacingOptions}
           onChange={onChangeStyleSpacingTopTablet}
@@ -148,7 +148,7 @@ export const WrapperOptions = (props) => {
 
       {styleSpacingTopMobile &&
         <SelectControl
-          label={__('Mobile', 'a1-careers-page')}
+          label={__('Mobile', 'ts-blocks')}
           value={styleSpacingTopMobile}
           options={spacingOptions}
           onChange={onChangeStyleSpacingTopMobile}
@@ -156,10 +156,10 @@ export const WrapperOptions = (props) => {
       }
 
       <hr />
-      <h3>{__('Spacing BOTTOM', 'a1-careers-page')}</h3>
+      <h3>{__('Spacing BOTTOM', 'ts-blocks')}</h3>
       {styleSpacingBottom &&
         <SelectControl
-          label={__('Desktop', 'a1-careers-page')}
+          label={__('Desktop', 'ts-blocks')}
           value={styleSpacingBottom}
           options={spacingOptions}
           onChange={onChangeStyleSpacingBottom}
@@ -168,7 +168,7 @@ export const WrapperOptions = (props) => {
 
       {styleSpacingBottomTablet &&
         <SelectControl
-          label={__('Tablet', 'a1-careers-page')}
+          label={__('Tablet', 'ts-blocks')}
           value={styleSpacingBottomTablet}
           options={spacingOptions}
           onChange={onChangeStyleSpacingBottomTablet}
@@ -177,7 +177,7 @@ export const WrapperOptions = (props) => {
 
       {styleSpacingBottomMobile &&
         <SelectControl
-          label={__('Mobile', 'a1-careers-page')}
+          label={__('Mobile', 'ts-blocks')}
           value={styleSpacingBottomMobile}
           options={spacingOptions}
           onChange={onChangeStyleSpacingBottomMobile}
@@ -185,24 +185,24 @@ export const WrapperOptions = (props) => {
       }
 
       <hr />
-      <h3>{__('Visibility', 'a1-careers-page')}</h3>
+      <h3>{__('Visibility', 'ts-blocks')}</h3>
       {styleShowOnlyMobile &&
         <SelectControl
-          label={__('Show Block Only On Mobile', 'a1-careers-page')}
+          label={__('Show Block Only On Mobile', 'ts-blocks')}
           value={styleShowOnlyMobile}
           options={[
-            { label: __('False', 'a1-careers-page'), value: 'false' },
-            { label: __('True', 'a1-careers-page'), value: 'true' },
+            { label: __('False', 'ts-blocks'), value: 'false' },
+            { label: __('True', 'ts-blocks'), value: 'true' },
           ]}
           onChange={onChangeStyleShowOnlyMobile}
         />
       }
 
       <hr />
-      <h3>{__('General', 'a1-careers-page')}</h3>
+      <h3>{__('General', 'ts-blocks')}</h3>
       {id &&
         <TextControl
-          label={__('Section ID', 'a1-careers-page')}
+          label={__('Section ID', 'ts-blocks')}
           value={id}
           onChange={onChangeId}
         />

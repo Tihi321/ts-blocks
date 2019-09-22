@@ -5,7 +5,7 @@ import { Toolbar } from '@wordpress/components';
 const createLevelControl = (targetLevel, selectedLevel, onChange) => {
   return {
     icon: 'heading',
-    title: sprintf(__('Heading %d', 'a1-careers-page'), targetLevel),
+    title: sprintf(__('Heading %d', 'ts-blocks'), targetLevel),
     isActive: targetLevel === selectedLevel,
     onClick: () => {
       onChange(targetLevel);

@@ -21,6 +21,6 @@
       "mediaAction": true
     }
   },
-  "parent": [ "a1-careers-page/gallery" ],
+  "parent": [ "ts-blocks/gallery" ],
   "hasWrapper": false
 }

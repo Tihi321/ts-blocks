@@ -40,8 +40,8 @@ function getConfig(assetsPathConfig, outputPathConfig) {
 // Create Theme/Plugin config variable.
 // Define path to the project from the WordPress root. This is used to output the correct path to the manifest.json.
 const configData = getConfig(
-  'wp-content/plugins/ts-blocks/src/blocks/assets',
-  'wp-content/plugins/ts-blocks/public'
+  'src/blocks/assets',
+  'public'
 ); // eslint-disable-line no-use-before-define
 
 // Export config to use in other Webpack files.

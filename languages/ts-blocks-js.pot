@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: src/blocks/components/image/components/image-options.js:27
+msgid "X"
+msgstr ""
+
+#: src/blocks/components/image/components/image-options.js:34
+msgid "field Item icon"
+msgstr ""
+
+#: src/blocks/components/image/components/image.js:12
+msgid "Image area"
+msgstr ""
+
+#: src/blocks/components/image/components/image.js:34
+msgid "Edit Image"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:13
+msgid "Controls"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:14
+msgid "Autoplay"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:15
+msgid "Loop"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:16
+msgid "Muted"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:17
+msgid "Background"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:18
+msgid "Autopause"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:19
+msgid "Title"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:24
+msgid "Video Iframe Settings"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:33
+msgid "Select"
+msgstr ""
+
+#: src/blocks/components/video-iframe/components/video-iframe-options.js:36
+msgid "Video Id"
+msgstr ""
+
+#: src/blocks/custom/quote/components/quote-options.js:17
+msgid "Color"
+msgstr ""
+
+#: src/blocks/custom/quote/components/quote-options.js:20
+#: src/blocks/wrapper/components/wrapper-options.js:121
+msgid "Default"
+msgstr ""
+
+#: src/blocks/custom/quote/components/quote-options.js:21
+#: src/blocks/wrapper/components/wrapper-options.js:70
+msgid "Light"
+msgstr ""
+
+#: src/blocks/custom/quote/components/quote-options.js:25
+msgid "Quote Text"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:102
+msgid "Container"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:105
+msgid "Container Width"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:109
+msgid "Medium"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:110
+msgid "No Width"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:118
+msgid "Container Spacing"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:122
+msgid "No Spacing"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:129
+msgid "Spacing TOP"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:159
+msgid "Spacing BOTTOM"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:162
+msgid "Desktop"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:171
+msgid "Tablet"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:180
+msgid "Mobile"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:188
+msgid "Visibility"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:191
+msgid "Show Block Only On Mobile"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:194
+msgid "False"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:195
+msgid "True"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:202
+msgid "General"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:205
+msgid "Section ID"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:46
+msgid "Not Set"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:47
+msgid "Biggest (100px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:48
+msgid "Bigger (90px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:49
+msgid "Big (80px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:50
+msgid "Largest (70px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:51
+msgid "Larger (60px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:52
+msgid "Large (50px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:53
+msgid "Default (40px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:54
+msgid "Medium (30px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:55
+msgid "Small (20px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:56
+msgid "Tiny (10px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:57
+msgid "No padding (0px)"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:61
+msgid "Utility"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:62
+msgid "Colors"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:66
+msgid "Background Color"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:71
+msgid "Black"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:78
+msgid "Content"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:82
+msgid "Content Width"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:91
+msgid "Content Offset"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:94
+msgid "No offset"
+msgstr ""
+
+#: src/blocks/wrapper/components/wrapper-options.js:95
+msgid "Center"
+msgstr ""

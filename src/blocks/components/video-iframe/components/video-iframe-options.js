@@ -10,18 +10,18 @@ export const VideoIframeOptions = (props) => {
     options,
     id,
     opitionValues = [
-      { value: 'controls', label: __('Controls', 'a1-careers-page') },
-      { value: 'autoplay', label: __('Autoplay', 'a1-careers-page') },
-      { value: 'loop', label: __('Loop', 'a1-careers-page') },
-      { value: 'muted', label: __('Muted', 'a1-careers-page') },
-      { value: 'background', label: __('Background', 'a1-careers-page') },
-      { value: 'autopause', label: __('Autopause', 'a1-careers-page') },
-      { value: 'title', label: __('Title', 'a1-careers-page') },
+      { value: 'controls', label: __('Controls', 'ts-blocks') },
+      { value: 'autoplay', label: __('Autoplay', 'ts-blocks') },
+      { value: 'loop', label: __('Loop', 'ts-blocks') },
+      { value: 'muted', label: __('Muted', 'ts-blocks') },
+      { value: 'background', label: __('Background', 'ts-blocks') },
+      { value: 'autopause', label: __('Autopause', 'ts-blocks') },
+      { value: 'title', label: __('Title', 'ts-blocks') },
     ],
   } = props;
 
   return (
-    <PanelBody title={__('Video Iframe Settings', 'a1-careers-page')}>
+    <PanelBody title={__('Video Iframe Settings', 'ts-blocks')}>
       {options && <Select
         className={componentClass}
         classNamePrefix="vi"
@@ -30,10 +30,10 @@ export const VideoIframeOptions = (props) => {
         value={options}
         onChange={onChangeOptions}
         options={opitionValues}
-        placeholder={__('Select', 'a1-careers-page')}
+        placeholder={__('Select', 'ts-blocks')}
       />}
       <TextControl
-        label={__('Video Id', 'a1-careers-page')}
+        label={__('Video Id', 'ts-blocks')}
         value={id}
         onChange={onChangeId}
       />

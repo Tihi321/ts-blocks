@@ -21,7 +21,7 @@ $js_class    = $attributes['blockJsClass'];
 <div class="<?php echo esc_attr( "{$block_class} gallery-block" ); ?>">
   <div class="<?php echo esc_attr( "{$block_class}__rollover" ); ?>">
     <div class="<?php echo esc_attr( "{$block_class}__note" ); ?>">
-      <span class="<?php echo esc_attr( "{$block_class}__note-text" ); ?>"><?php \esc_html_e( 'Open Gallery', 'a1-careers-page' ); ?></span>
+      <span class="<?php echo esc_attr( "{$block_class}__note-text" ); ?>"><?php \esc_html_e( 'Open Gallery', 'ts-blocks' ); ?></span>
       <i class="<?php echo esc_attr( "{$block_class}__note-icon" ); ?>"></i>
     </div>
   </div>

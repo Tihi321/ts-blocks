@@ -26,7 +26,7 @@ class Blocks extends Lib_Blocks {
   public function register() {
     parent::register();
 
-    add_filter( 'allowed_block_types', [ $this, 'get_all_blocks_list' ], 9999 );
+    add_filter( 'allowed_block_types', [ $this, 'allowed_block_types' ], 9999, 2 );
     add_filter( 'a1c_get_inner_blocks', [ $this, 'get_inner_blocks' ], 10, 2 );
   }
 
@@ -45,5 +45,19 @@ class Blocks extends Lib_Blocks {
     $dom->load( $inner_block_content );
     $contents = $dom->find( $block_class );
     return $contents;
+  }
+
+  /**
+   * Allowed all blocks blocks, overwrite only theme blocks.
+   *
+   * @param array  $allowed_blocks Array of allowed blocks.
+   * @param object $post Post object.
+   * @since 1.0.0
+   *
+   * @return array
+   */
+  public function allowed_block_types( $allowed_blocks, $post ) {
+    return $allowed_blocks;
+
   }
 }
