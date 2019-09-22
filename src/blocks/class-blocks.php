@@ -57,7 +57,7 @@ class Blocks extends Lib_Blocks {
     parent::register();
 
     add_filter( 'allowed_block_types', [ $this, 'allowed_block_types' ], 9999, 2 );
-    add_filter( 'a1c_get_inner_blocks', [ $this, 'get_inner_blocks' ], 10, 2 );
+    add_filter( 'tb_get_inner_blocks', [ $this, 'get_inner_blocks' ], 10, 2 );
   }
 
   /**
@@ -89,5 +89,18 @@ class Blocks extends Lib_Blocks {
   public function allowed_block_types( $allowed_blocks, $post ) {
     return $allowed_blocks;
 
+  }
+
+  /**
+   * Get Projects Theme path.
+   * If you are using a plugin, override method must be provided with correct blocks folder.
+   *
+   * @return string
+   *
+   * @since 1.0.7 Removing static method.
+   * @since 1.0.0
+   */
+  public function get_blocks_path() : string {
+    return apply_filters( 'tb_get_base_url', 'path' ) . '/src/blocks';
   }
 }

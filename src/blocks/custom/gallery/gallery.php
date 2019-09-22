@@ -12,7 +12,7 @@ $block_class       = $attributes['blockClass'] ?? '';
 $js_class          = $attributes['blockJsClass'] ?? '';
 $inner_block_class = '.gallery-block';
 
-$inner_blocks = apply_filters( 'a1c_get_inner_blocks', $inner_block_content, $inner_block_class );
+$inner_blocks = apply_filters( 'tb_get_inner_blocks', $inner_block_content, $inner_block_class );
 
 ?>
 <div class="<?php echo esc_attr( "{$block_class}" ); ?>">
