@@ -3,20 +3,20 @@
  * The Theme specific functionality.
  *
  * @since   1.0.0
- * @package TS_Blocks\Theme
+ * @package TS_Blocks\Front
  */
 
-namespace TS_Blocks\Theme;
+namespace TS_Blocks\Front;
 
 use Eightshift_Libs\Core\Service;
 use Eightshift_Libs\Manifest\Manifest_Data;
 
 /**
- * Class Theme
+ * Class Front
  *
  * @since 1.0.0
  */
-class Theme implements Service {
+class Front implements Service {
 
   /**
    * Instance variable of manifest data.
@@ -60,8 +60,8 @@ class Theme implements Service {
   public function enqueue_styles() {
 
     // Main style file.
-    \wp_register_style( ACP_THEME_NAME . '-style', $this->manifest->get_assets_manifest_item( 'application.css' ), [], ACP_THEME_VERSION );
-    \wp_enqueue_style( ACP_THEME_NAME . '-style' );
+    \wp_register_style( TB_PLUGIN_NAME . '-style', $this->manifest->get_assets_manifest_item( 'application.css' ), [], TB_PLUGIN_VERSION );
+    \wp_enqueue_style( TB_PLUGIN_NAME . '-style' );
 
   }
 
@@ -79,8 +79,8 @@ class Theme implements Service {
   public function enqueue_scripts() {
 
     // Main Javascript file.
-    \wp_register_script( ACP_THEME_NAME . '-scripts', $this->manifest->get_assets_manifest_item( 'application.js' ), [], ACP_THEME_VERSION, true );
-    \wp_enqueue_script( ACP_THEME_NAME . '-scripts' );
+    \wp_register_script( TB_PLUGIN_NAME . '-scripts', $this->manifest->get_assets_manifest_item( 'application.js' ), [], TB_PLUGIN_VERSION, true );
+    \wp_enqueue_script( TB_PLUGIN_NAME . '-scripts' );
 
     // Deregister then register react to frontend.
     wp_enqueue_script( 'wp-i18n' );
@@ -89,7 +89,7 @@ class Theme implements Service {
 
     // Global variables for ajax and translations.
     \wp_localize_script(
-      ACP_THEME_NAME . '-scripts',
+      TB_PLUGIN_NAME . '-scripts',
       'themeLocalization',
       [
         'restUrl' => \rest_url(),

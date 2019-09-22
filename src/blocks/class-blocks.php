@@ -17,6 +17,36 @@ use PHPHtmlParser\Dom;
 class Blocks extends Lib_Blocks {
 
   /**
+   * Default projects blocks setting global variable name.
+   * Used to store all blocks global settings data.
+   *
+   * @var string
+   *
+   * @since 1.0.0
+   */
+  protected $blocks_settings_variable_name = 'TB_BLOCKS_SETTINGS';
+
+  /**
+   * Default projects wrapper global variable name.
+   * Used to store wrapper data.
+   *
+   * @var string
+   *
+   * @since 1.0.0
+   */
+  protected $wrapper_variable_name = 'TB_WRAPPER';
+
+  /**
+   * Default projects blocks global variable name.
+   * Used to store all blocks data.
+   *
+   * @var string
+   *
+   * @since 1.0.0
+   */
+  protected $blocks_variable_name = 'TB_BLOCKS';
+
+  /**
    * Register all the hooks
    *
    * @since 1.0.0

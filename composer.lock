@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "277d74b2b32f60e938585bdb7c35ece8",
+    "content-hash": "95b8eb3a37e55ff43d7f71e3ff6b8271",
     "packages": [
         {
             "name": "infinum/eightshift-blocks",

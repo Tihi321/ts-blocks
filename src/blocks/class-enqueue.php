@@ -58,7 +58,7 @@ class Enqueue extends Lib_Enqueue {
    * @since 1.0.0
    */
   protected function get_project_name() : string {
-    return ACP_THEME_NAME;
+    return TB_PLUGIN_NAME;
   }
 
   /**
@@ -69,6 +69,6 @@ class Enqueue extends Lib_Enqueue {
    * @since 1.0.0
    */
   protected function get_project_version() : string {
-    return ACP_THEME_VERSION;
+    return TB_PLUGIN_VERSION;
   }
 }

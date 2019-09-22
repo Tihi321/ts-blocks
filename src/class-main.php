@@ -19,7 +19,7 @@ use TS_Blocks\Manifest;
 use TS_Blocks\General;
 use TS_Blocks\Blocks;
 use TS_Blocks\Admin\Menu;
-use TS_Blocks\Theme;
+use TS_Blocks\Front;
 
 /**
  * The main start class.
@@ -65,7 +65,7 @@ class Main extends LibMain {
       Blocks\Blocks::class,
 
       // Theme.
-      Theme\Theme::class => [ Manifest\Manifest::class ],
+      Front\Front::class => [ Manifest\Manifest::class ],
     ];
   }
 }

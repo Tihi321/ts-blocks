@@ -20,6 +20,24 @@ use Eightshift_Libs\Core\Service;
 class Manifest extends LibManifest implements Service {
 
   /**
+   * Global variable name constant.
+   *
+   * @var string
+   *
+   * @since 0.6.0
+   */
+  const GLOBAL_VARIABLE_NAME = 'TB_ASSETS_MANIFEST';
+
+  /**
+   * Manifest item filter name constant.
+   *
+   * @var string
+   *
+   * @since 0.9.0
+   */
+  const MANIFEST_ITEM_FILTER_NAME = 'tb_manifest_item';
+
+  /**
    * Get Assets Manifest global variable name.
    *
    * @return string
@@ -27,7 +45,7 @@ class Manifest extends LibManifest implements Service {
    * @since 1.0.0
    */
   protected function get_manifest_item_filter_name() : string {
-    return 'es_manifest_item';
+    return 'tb_manifest_item';
   }
 
   /**
@@ -38,7 +56,7 @@ class Manifest extends LibManifest implements Service {
    * @since 1.0.0
    */
   protected function get_global_variable_name() : string {
-    return 'ES_ASSETS_MANIFEST';
+    return 'TB_ASSETS_MANIFEST';
   }
 
   /**

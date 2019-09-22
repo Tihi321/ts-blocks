@@ -33,12 +33,28 @@ if ( ! defined( 'WPINC' ) ) {
  */
 require __DIR__ . '/vendor/autoload.php';
 
+
 /**
- * Define enviroment production or develop.
+ * Global variable defining plugin name generally used for naming assets handlers.
  *
  * @since 1.0.0
  */
-define( 'PB_ENV', 'production' );
+\define( 'TB_PLUGIN_NAME', 'ts-blocks' );
+
+
+/**
+ * Global variable defining rest api version name generally used for naming assets handlers.
+ *
+ * @since 1.0.0
+ */
+define( 'TB_API_VERSION', 'v1' );
+
+/**
+ * Global variable defining plugin version generally used for versioning assets handlers.
+ *
+ * @since 1.0.0
+ */
+\define( 'TB_PLUGIN_VERSION', '1.0.0' );
 
 /**
  * Begins execution of the plugin.
