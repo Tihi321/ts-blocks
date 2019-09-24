@@ -7,6 +7,10 @@ const webpack = require('webpack');
 // Eightshift blocks.
 const blocks = require('./../vendor/infinum/eightshift-blocks/webpack');
 
+// add hooks external.
+blocks.externals['@wp/hooks'] = 'wp.hooks';
+blocks.externals['@wordpress/hooks'] = 'wp.hooks';
+
 // Plugins.
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');

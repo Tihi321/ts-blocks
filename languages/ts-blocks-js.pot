@@ -59,6 +59,30 @@ msgstr ""
 msgid "Video Id"
 msgstr ""
 
+#: src/blocks/custom/code/components/code-options.js:23
+msgid "Type"
+msgstr ""
+
+#: src/blocks/custom/code/components/code-options.js:26
+msgid "Javascript"
+msgstr ""
+
+#: src/blocks/custom/code/components/code-options.js:27
+msgid "Php"
+msgstr ""
+
+#: src/blocks/custom/code/components/code-options.js:28
+msgid "Typescript"
+msgstr ""
+
+#: src/blocks/custom/code/components/code-options.js:29
+msgid "Dockerfile"
+msgstr ""
+
+#: src/blocks/custom/code/components/code-options.js:33
+msgid "Code Text"
+msgstr ""
+
 #: src/blocks/custom/quote/components/quote-options.js:17
 msgid "Color"
 msgstr ""

@@ -1,0 +1,24 @@
+{
+  "blockName": "code",
+  "title": "Code",
+  "description" : "Code block",
+  "category": "common",
+  "icon": {
+    "src": "format-image"
+  },
+  "keywords": [
+    "code",
+    "text",
+    "syntax"
+  ],
+  "attributes": {
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "type": {
+      "type": "string",
+      "default": "javascript"
+    }
+  }
+}
