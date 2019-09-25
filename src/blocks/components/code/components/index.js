@@ -6,10 +6,12 @@ export function Code({ className, children, type }) {
   const preElement = useRef(null);
 
   const highlightCode = () => {
-    const nodes = preElement.current.querySelectorAll(`.${type}`);
-    nodes.forEach((node) => {
-      hljs.highlightBlock(node);
-    });
+    if (preElement.current) {
+      const nodes = preElement.current.querySelectorAll(`.${type}`);
+      nodes.forEach((node) => {
+        hljs.highlightBlock(node);
+      });
+    }
   };
 
   useEffect(() => {

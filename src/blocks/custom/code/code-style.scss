@@ -1,3 +1,10 @@
 .block-code {
   position: relative;
+
+  @include media(mobile) {
+    padding: 20px;
+  }
+  @include media(tablet up) {
+    padding: 50px;
+  }
 }
