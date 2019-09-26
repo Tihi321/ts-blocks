@@ -16,12 +16,6 @@
   }
 }
 
-.icon--briefcase {
-  &::before {
-    content: unicode($icon--briefcase);
-  }
-}
-
 .icon--download_icon {
   &::before {
     content: unicode($icon--download_icon);

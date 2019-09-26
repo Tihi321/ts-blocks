@@ -10,6 +10,17 @@ const cssNano = require('cssnano');
 const plugins = [
   autoPrefixer,
   postcssFontMagician({
+    'ts-blocks': {
+      variants: {
+        normal: {
+          400: {
+            url: {
+              woff: `${config.fontsPath}ts-blocks.woff`,
+            },
+          },
+        },
+      },
+    },
     variants: {
       'Roboto Condensed': {
         300: [],
