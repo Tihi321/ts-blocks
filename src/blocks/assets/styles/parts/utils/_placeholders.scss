@@ -9,3 +9,13 @@
 
   @include font-smoothing();
 }
+
+%container-spacing {
+  padding-left: map-get-strict($container-spacing, mobile);
+  padding-right: map-get-strict($container-spacing, mobile);
+
+  @include media(large up) {
+    padding-left: map-get-strict($container-spacing, large);
+    padding-right: map-get-strict($container-spacing, large);
+  }
+}
