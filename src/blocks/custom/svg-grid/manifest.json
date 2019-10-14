@@ -1,0 +1,16 @@
+{
+  "blockName": "svg-grid",
+  "title": "Svg Grid",
+  "description" : "Svg Grid block",
+  "category": "common",
+  "icon": {
+    "src": "format-image"
+  },
+  "keywords": [
+    "svg",
+    "path",
+    "draw"
+  ],
+  "attributes": {
+  }
+}

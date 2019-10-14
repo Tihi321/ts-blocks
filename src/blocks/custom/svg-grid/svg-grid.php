@@ -9,7 +9,7 @@
 namespace TS_Blocks\Blocks;
 
 $block_class    = $attributes['blockClass'] ?? '';
-$js_block_class = $attributes['blockJsClass'] ?? 'js-code-block';
+$js_block_class = $attributes['blockJsClass'] ?? 'js-svg-grid';
 
 ?>
 
