@@ -3,6 +3,7 @@
 // Webpack specific imports.
 const merge = require('webpack-merge');
 const webpack = require('webpack');
+const path = require('path');
 
 // Eightshift blocks.
 const blocks = require('./../vendor/infinum/eightshift-blocks/webpack');
@@ -17,12 +18,6 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 
 // All Plugins used in production and development build.
 const plugins = [
-
-  // Provide global variables to window object.
-  new webpack.ProvidePlugin({
-    $: 'jquery',
-    jQuery: 'jquery',
-  }),
 
   // Create manifest.json file.
   new ManifestPlugin({
@@ -46,6 +41,19 @@ const loaders = {
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
       use: 'babel-loader',
+    },
+    {
+      test: /\.svelte$/,
+      exclude: /node_modules/,
+      use: [
+        {
+          loader: 'svelte-loader',
+          options: {
+            emitCss: false,
+            hotReload: false,
+          },
+        },
+      ],
     },
     {
       test: /\.(png|svg|jpg|jpeg|gif|ico)$/,

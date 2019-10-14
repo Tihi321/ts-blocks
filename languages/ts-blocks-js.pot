@@ -100,6 +100,10 @@ msgstr ""
 msgid "Quote Text"
 msgstr ""
 
+#: src/blocks/custom/random-quotes/random-quotes.js:23
+msgid "Number of random quotes"
+msgstr ""
+
 #: src/blocks/wrapper/components/wrapper-options.js:101
 msgid "Desktop Layout Options"
 msgstr ""
