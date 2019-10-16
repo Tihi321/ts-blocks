@@ -1,17 +1,87 @@
-$random-quotes-vars: (
+$block-svg-grid: (
+  colors: (
+    code-color: $base-juan-color,
+    code-bg: rgba($base-horizon-color, 0.1),
+    fields-bg: rgba($base-success-color, 0.1),
+    inputs-border: rgba($base-patina-color, 0.3),
+  ),
   sizes: (
     mobile: (
-      font-size: 24px,
+      font-size: 18px,
       line-height: 1.25,
     ),
     tablet: (
-      font-size: 36px,
+      font-size: 20px,
+    ),
+  ),
+  label-size: (
+    mobile: (
+      font-size: 14px,
+      line-height: 1.25,
+    ),
+    tablet: (
+      font-size: 16px,
     ),
   ),
 );
 
-.block-random-quotes {
-  @include responsive($random-quotes-vars, sizes);
-  text-align: center;
-  font-weight: 300;
+.block-svg-grid {
+  padding: 20px 10px;
+
+  &__input,
+  &__editable {
+    @include responsive($block-svg-grid, sizes);
+    background-color: map-get-deep($block-svg-grid, colors, code-bg);
+    color: map-get-deep($block-svg-grid, colors, code-color);
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid map-get-deep($block-svg-grid, colors, inputs-border);
+  }
+
+  &__label {
+    @include responsive($block-svg-grid, label-size);
+    font-style: italic;
+    color: map-get-deep($block-svg-grid, colors, code-color);
+  }
+
+  &__container {
+    padding: 50px 0;
+  }
+
+  &__fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: map-get-deep($block-svg-grid, colors, fields-bg);
+  }
+
+  &__field {
+    min-width: 100px;
+    width: 19%;
+    padding: 0 10px;
+  }
+
+  .svg-grid__outer {
+    font-size: 0.5px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__code {
+    @include responsive($block-svg-grid, sizes);
+    padding: 10px;
+    background-color: map-get-deep($block-svg-grid, colors, code-bg);
+    color: map-get-deep($block-svg-grid, colors, code-color);
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    border: none;
+    resize: none;
+
+    &:focus {
+      outline: none;;
+    }
+  }
 }

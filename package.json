@@ -63,6 +63,7 @@
     "@babel/polyfill": "^7.4.4",
     "@wordpress/block-serialization-default-parser": "^3.4.0",
     "autoprefixer": "^9.6.1",
+    "autosize": "^4.0.2",
     "classnames": "^2.2.6",
     "cssnano": "^4.1.10",
     "eightshift-frontend-libs": "^1.0.18",

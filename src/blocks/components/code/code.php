@@ -15,6 +15,6 @@ $type           = $attributes['type'] ?? 'javascript';
 
 ?>
 
-<pre class="<?php echo esc_attr( "{$block_class} {$js_block_class} .{$type}" ); ?>">
+<pre class="<?php echo esc_attr( "{$block_class} {$js_block_class} {$type}" ); ?>">
   <?php echo esc_html( $content ); ?>
 </pre>

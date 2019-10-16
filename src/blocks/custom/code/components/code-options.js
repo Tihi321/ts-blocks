@@ -25,6 +25,7 @@ export const CodeOptions = (props) => {
         options={[
           { label: __('Javascript', 'ts-blocks'), value: 'javascript' },
           { label: __('Php', 'ts-blocks'), value: 'php' },
+          { label: __('Html', 'ts-blocks'), value: 'html' },
           { label: __('Typescript', 'ts-blocks'), value: 'typescript' },
           { label: __('Dockerfile', 'ts-blocks'), value: 'dockerfile' },
         ]}

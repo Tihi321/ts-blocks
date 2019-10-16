@@ -72,14 +72,18 @@ msgid "Php"
 msgstr ""
 
 #: src/blocks/custom/code/components/code-options.js:28
-msgid "Typescript"
+msgid "Html"
 msgstr ""
 
 #: src/blocks/custom/code/components/code-options.js:29
+msgid "Typescript"
+msgstr ""
+
+#: src/blocks/custom/code/components/code-options.js:30
 msgid "Dockerfile"
 msgstr ""
 
-#: src/blocks/custom/code/components/code-options.js:33
+#: src/blocks/custom/code/components/code-options.js:34
 msgid "Code Text"
 msgstr ""
 
@@ -100,8 +104,8 @@ msgstr ""
 msgid "Quote Text"
 msgstr ""
 
-#: src/blocks/custom/svg-grid/svg-grid.js:23
-msgid "Number of random quotes"
+#: src/blocks/custom/svg-grid/svg-grid.js:12
+msgid "Svg Grid Block"
 msgstr ""
 
 #: src/blocks/wrapper/components/wrapper-options.js:101
