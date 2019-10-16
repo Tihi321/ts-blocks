@@ -31,7 +31,7 @@
 
 <div class="svg-grid__outer">
   <svg class="svg-grid" fill="#28536B" width="100%" viewBox="0 0 {vbx} {vbx}" style="overflow: visible;">
-    <g class="svg-grid__path" stroke="#609295" stroke-width="1px" fill="transparent">
+    <g class="svg-grid__path" stroke="#609295" stroke-width="0.2" fill="transparent">
       <slot></slot>
     </g>
     <g class="svg-grid__grid" style="opacity: {opacity};">{@html grid(vbx, vby)}</g>
