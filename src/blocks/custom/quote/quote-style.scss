@@ -31,7 +31,7 @@ $quote-vars: (
     color: map-get-deep($quote-vars, colors, default);
   }
 
-  &--grey {
+  &--light {
     color: map-get-deep($quote-vars, colors, light);
   }
 
