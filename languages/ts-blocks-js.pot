@@ -87,21 +87,25 @@ msgstr ""
 msgid "Code Text"
 msgstr ""
 
-#: src/blocks/custom/quote/components/quote-options.js:17
+#: src/blocks/custom/quote/components/quote-options.js:18
 msgid "Color"
 msgstr ""
 
-#: src/blocks/custom/quote/components/quote-options.js:20
+#: src/blocks/custom/quote/components/quote-options.js:21
 #: src/blocks/wrapper/components/wrapper-responsive-tab-content.js:121
 msgid "Default"
 msgstr ""
 
-#: src/blocks/custom/quote/components/quote-options.js:21
+#: src/blocks/custom/quote/components/quote-options.js:22
 msgid "Light"
 msgstr ""
 
-#: src/blocks/custom/quote/components/quote-options.js:25
+#: src/blocks/custom/quote/components/quote-options.js:26
 msgid "Quote Text"
+msgstr ""
+
+#: src/blocks/custom/quote/components/quote-options.js:31
+msgid "Author"
 msgstr ""
 
 #: src/blocks/custom/svg-grid/svg-grid.js:12

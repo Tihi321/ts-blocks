@@ -4,13 +4,19 @@ export const QuoteEditor = (props) => {
       blockClass,
       content,
       color,
+      author,
     },
   } = props;
 
 
   return (
     <div className={`${blockClass} ${blockClass}--${color}`}>
-      {content}
+      <span className={`${blockClass}__content`}>
+        {content}
+      </span>
+      {(author) && <span className={`${blockClass}__author`}>
+        {author}
+      </span>}
     </div>
   );
 };

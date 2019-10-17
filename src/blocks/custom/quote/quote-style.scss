@@ -19,12 +19,25 @@ $quote-vars: (
   text-align: center;
   font-weight: 300;
 
-  &::before {
-    content: '\00201e';
+  &__content {
+    display: inline-block;
+
+    &::before {
+      content: '\00201e';
+    }
+
+    &::after {
+      content: '\00201c';
+    }
   }
 
-  &::after {
-    content: '\00201c';
+  &__author {
+    display: inline-block;
+
+    &::before {
+      content: '-';
+      margin: 0 10px;
+    }
   }
 
   &--default {

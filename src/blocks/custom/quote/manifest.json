@@ -19,6 +19,10 @@
       "type": "string",
       "default": ""
     },
+    "author": {
+      "type": "string",
+      "default": ""
+    },
     "color": {
       "type": "string",
       "default": "default"

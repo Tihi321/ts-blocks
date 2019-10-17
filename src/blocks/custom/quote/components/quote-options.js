@@ -7,6 +7,7 @@ export const QuoteOptions = (props) => {
     attributes: {
       content,
       color,
+      author,
     },
     actions,
   } = props;
@@ -26,6 +27,11 @@ export const QuoteOptions = (props) => {
       <TextControl
         value={content}
         onChange={actions.onChangeContent}
+      />
+      <label htmlFor="url">{__('Author', 'ts-blocks')}</label>
+      <TextControl
+        value={author}
+        onChange={actions.onChangeAuthor}
       />
     </Fragment>
   );
