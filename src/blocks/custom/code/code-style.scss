@@ -1,5 +1,6 @@
 .block-code {
   position: relative;
+  overflow: auto;
 
   @include media(mobile) {
     padding: 20px;
