@@ -1,21 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Fragment } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-import { TextareaControl, SelectControl } from '@wordpress/components';
+import { SelectControl } from '@wordpress/components';
 import { codeHooks } from '../../../components/hooks';
 
 export const CodeOptions = (props) => {
   const {
     attributes: {
       type,
-      content,
+      blockClass,
+      showRender,
     },
+
     actions,
   } = props;
 
+  const [reColor, setReColor] = useState(false);
+
   useEffect(() => {
     codeHooks.doAction('tsb_highlight_please');
-  }, [type]);
+  }, [reColor]);
 
   return (
     <Fragment>
@@ -31,11 +35,20 @@ export const CodeOptions = (props) => {
         ]}
         onChange={actions.onChangeType}
       />
-      <label htmlFor="url">{__('Code Text', 'ts-blocks')}</label>
-      <TextareaControl
-        value={content}
-        onChange={actions.onChangeContent}
-      />
+      <div className={`${blockClass}__buttons`}>
+        <button
+          className={`${blockClass}__button`}
+          onClick={() => actions.onChangeShowRender(!showRender)}
+        >
+          {showRender ? __('Edit', 'ts-blocks') : __('Render', 'ts-blocks')}
+        </button>
+        <button
+          className={`${blockClass}__button`}
+          onClick={() => setReColor(!reColor)}
+        >
+          {__('Restyle', 'ts-blocks')}
+        </button>
+      </div>
     </Fragment>
   );
 };

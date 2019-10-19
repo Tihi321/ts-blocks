@@ -1,0 +1,40 @@
+$code-edit-vars: (
+  colors: (
+    btn-bg: $base-hippie-color,
+    btn-color: $base-white-color,
+  ),
+  sizes: (
+    mobile: (
+      font-size: 18px,
+      line-height: 1.5,
+    ),
+    tablet: (
+      font-size: 20px,
+    ),
+  ),
+);
+
+.block-code {
+  &__edit {
+    @include responsive($code-edit-vars, sizes);
+  }
+
+  &__textarea {
+    font-size: inherit !important; /* stylelint-disable-line declaration-no-important */
+    width: 100%;
+    resize: none;
+  }
+
+  &__buttons {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  &__button {
+    background: map-get-deep($code-edit-vars, colors, btn-bg);
+    color: map-get-deep($code-edit-vars, colors, btn-color);
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+}

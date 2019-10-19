@@ -59,32 +59,40 @@ msgstr ""
 msgid "Video Id"
 msgstr ""
 
-#: src/blocks/custom/code/components/code-options.js:23
+#: src/blocks/custom/code/components/code-options.js:27
 msgid "Type"
 msgstr ""
 
-#: src/blocks/custom/code/components/code-options.js:26
+#: src/blocks/custom/code/components/code-options.js:30
 msgid "Javascript"
 msgstr ""
 
-#: src/blocks/custom/code/components/code-options.js:27
+#: src/blocks/custom/code/components/code-options.js:31
 msgid "Php"
 msgstr ""
 
-#: src/blocks/custom/code/components/code-options.js:28
+#: src/blocks/custom/code/components/code-options.js:32
 msgid "Html"
 msgstr ""
 
-#: src/blocks/custom/code/components/code-options.js:29
+#: src/blocks/custom/code/components/code-options.js:33
 msgid "Typescript"
 msgstr ""
 
-#: src/blocks/custom/code/components/code-options.js:30
+#: src/blocks/custom/code/components/code-options.js:34
 msgid "Dockerfile"
 msgstr ""
 
-#: src/blocks/custom/code/components/code-options.js:34
-msgid "Code Text"
+#: src/blocks/custom/code/components/code-options.js:43
+msgid "Edit"
+msgstr ""
+
+#: src/blocks/custom/code/components/code-options.js:43
+msgid "Render"
+msgstr ""
+
+#: src/blocks/custom/code/components/code-options.js:49
+msgid "Restyle"
 msgstr ""
 
 #: src/blocks/custom/quote/components/quote-options.js:18
@@ -321,7 +329,7 @@ msgid "Content Width"
 msgstr ""
 
 #: src/blocks/wrapper/components/wrapper-responsive-tab-content.js:60
-msgid "Change block width in %d columns range. Example 6 = 50% screen width."
+msgid "Change block width in columns range. Example 6 = 50% screen width."
 msgstr ""
 
 #: src/blocks/wrapper/components/wrapper-responsive-tab-content.js:74

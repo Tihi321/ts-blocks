@@ -12,6 +12,10 @@
     "syntax"
   ],
   "attributes": {
+    "showRender": {
+      "type": "boolean",
+      "default": false
+    },
     "content": {
       "type": "string",
       "default": ""
