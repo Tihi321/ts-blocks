@@ -29,7 +29,12 @@
         "loose": true
       }
     ],
-    "@babel/plugin-syntax-dynamic-import",
+    [
+      "@babel/plugin-syntax-dynamic-import",
+      {
+        "allChunks": true
+      }
+    ],
     [
       "@babel/plugin-proposal-object-rest-spread",
       {
