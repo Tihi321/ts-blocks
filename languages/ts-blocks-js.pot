@@ -44,6 +44,7 @@ msgid "Autopause"
 msgstr ""
 
 #: src/blocks/components/video-iframe/components/video-iframe-options.js:19
+#: src/blocks/custom/code-sandbox/components/code-sandbox-options.js:27
 msgid "Title"
 msgstr ""
 
@@ -57,6 +58,22 @@ msgstr ""
 
 #: src/blocks/components/video-iframe/components/video-iframe-options.js:36
 msgid "Video Id"
+msgstr ""
+
+#: src/blocks/custom/code-sandbox/components/code-sandbox-options.js:41
+msgid "Source"
+msgstr ""
+
+#: src/blocks/custom/code-sandbox/components/code-sandbox-options.js:55
+msgid "Style"
+msgstr ""
+
+#: src/blocks/custom/code-sandbox/components/code-sandbox-options.js:69
+msgid "Allow"
+msgstr ""
+
+#: src/blocks/custom/code-sandbox/components/code-sandbox-options.js:83
+msgid "Sandbox"
 msgstr ""
 
 #: src/blocks/custom/code/components/code-options.js:27

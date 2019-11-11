@@ -1,0 +1,36 @@
+{
+  "blockName": "code-sandbox",
+  "title": "Code sandbox",
+  "description" : "Embed code sandbox block.",
+  "category": "common",
+  "icon": {
+    "src": "paperclip"
+  },
+  "keywords": [
+    "Embed",
+    "Code sandbox",
+    "Block Embed"
+  ],
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "string",
+      "default": ""
+    },
+    "src": {
+      "type": "string",
+      "default": ""
+    },
+    "allow": {
+      "type": "string",
+      "default": ""
+    },
+    "sandbox": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}
