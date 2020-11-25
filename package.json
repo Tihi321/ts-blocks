@@ -69,7 +69,7 @@
     "cssnano": "^4.1.10",
     "eightshift-frontend-libs": "^1.0.18",
     "form-urlencoded": "^4.0.0",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.1.2",
     "jquery": "^3.4.1",
     "layzr.js": "^2.2.2",
     "media-blender": "^2.1.0",
